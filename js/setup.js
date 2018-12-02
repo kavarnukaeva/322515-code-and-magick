@@ -31,9 +31,9 @@ for (var i = 0; i < WIZARDS_QUANTITY; i++) {
 var renderWizard = function (wizard) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
 
-  wizardElement.querySelector('.setup-similar-label').textContent = wizards[j].name;
-  wizardElement.querySelector('.wizard-coat').style.fill = wizards[j].coatColor;
-  wizardElement.querySelector('.wizard-eyes').style.fill = wizards[j].eyesColor;
+  wizardElement.querySelector('.setup-similar-label').textContent = wizard.name;
+  wizardElement.querySelector('.wizard-coat').style.fill = wizard.coatColor;
+  wizardElement.querySelector('.wizard-eyes').style.fill = wizard.eyesColor;
 
   return wizardElement;
 };
